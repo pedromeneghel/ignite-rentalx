@@ -1,4 +1,4 @@
-FROM node:14-alpine AS dev
+FROM node AS dev
 
 CMD cd "/application" && \
   yarn && \
