@@ -30,7 +30,7 @@ ps:
 	docker-compose ps
 
 login:
-	docker-compose run -w /application ignite-conceitos-node /bin/bash
+	docker-compose run -w /application ignite-rentalx /bin/bash
 
 setup:
-	docker-compose run -w /application ignite-conceitos-node bash -c "yarn && yarn dev"
+	docker-compose run -w /application ignite-rentalx bash -c "yarn && yarn dev"
