@@ -1,6 +1,5 @@
 import csvParse from "csv-parse";
 import fs from "fs";
-import { resolve } from "node:path";
 
 import { ICategoriesRepository } from "../../repositories/ICategoriesRepository";
 
