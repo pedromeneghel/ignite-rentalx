@@ -1,5 +1,9 @@
 FROM node AS dev
 
-CMD cd "/application" && \
-  yarn && \
-  yarn dev
+WORKDIR /application
+
+COPY package.json ./
+
+RUN yarn
+
+CMD yarn dev
