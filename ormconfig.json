@@ -1,6 +1,6 @@
 {
   "type": "postgres",
-  "host": "localhost",
+  "host": "192.168.2.104",
   "username": "docker",
   "password": "ignite",
   "database": "rentx",
@@ -8,6 +8,6 @@
   "migrations": ["./src/database/migrations/*.ts"],
   "entities": ["./src/modules/**/entities/*.ts"],
   "cli": {
-    "migrationsDir": "./src/database/migrations/migrations"
+    "migrationsDir": "./src/database/migrations"
   }
 }

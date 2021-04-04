@@ -20,7 +20,6 @@ services:
       - pgdata:/data/postgres
   ignite-rentalx:
     restart: always
-    user: "1000:1000"
     build:
       context: .
       target: dev
