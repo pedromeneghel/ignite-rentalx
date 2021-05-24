@@ -15,7 +15,7 @@ export class CreateSpecificationUseCase {
   ) { }
 
   async execute({ description, name }: IRequest): Promise<void> {
-    const specificationAlreadyExists = this.specificationRepository.findByName(
+    const specificationAlreadyExists = await this.specificationRepository.findByName(
       name
     );
 
@@ -23,6 +23,6 @@ export class CreateSpecificationUseCase {
       throw new Error("Specification already exists.");
     }
 
-    this.specificationRepository.create({ description, name });
+    await this.specificationRepository.create({ description, name });
   }
 }
